@@ -3,7 +3,7 @@ include "config.php";
 
 $sql="SELECT * FROM users WHERE nick_name=$1 AND password=$2 ";
 $stmt=pg_prepare('user',$sql);
-//nincs bel√©pve
+//nincs belÈpve
 if($_SESSION['belep'] !== true)
 {
     if(isset($_POST['login']))
@@ -28,7 +28,7 @@ if($_SESSION['belep'] !== true)
     }
 }
 else
-{//be van l√©pve
+{//be van lÈpve
     include 'vedett.php';
 }
 
@@ -38,8 +38,8 @@ if($_SESSION['belep'] !== true)
 <form method="post" action="">
 Nick name: <input type="text" name="name" id="name">
 Password: <input type="password" name="belep_password" id="belep_password">
-<input type="submit" name="login" value="Bel√©p√©s"> <br />
-<a href="registration.php">Regisztr√°ci√≥</a>
+<input type="submit" name="login" value="BelÈpÈs"> <br />
+<a href="registration.php">Regisztr·ciÛ</a>
 </form>
 <?php
 }
