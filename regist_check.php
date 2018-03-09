@@ -6,7 +6,7 @@ function reg_check()
     {
         return "All fields are required!";
     }
-    elseif(preg_match('^[a-zA-Z\-\_Ã¡Ã©Ã­Ã³Ã¶Å‘Ã¼Å±Ã�Ã‰Ã�Ã“Ã–Å�ÃœÅ°]+$', $_POST['nick_anme']))
+    elseif(preg_match('^[a-zA-Z\-\_áéíóöőüűÁÉÍÓÖŐÜŰ]+$', $_POST['nick_anme']))
     {
         return "In nick only Hungarian alphabet small and capitals, numbers, and _ and - are allowed!";
     }

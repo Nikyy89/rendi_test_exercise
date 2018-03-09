@@ -26,6 +26,6 @@ if(isset($_POST['regisztracio']))
 	 Email address: <input type="text" name="email_address" id="email_address"> <br />
 	 Password: <input type="password" name="password" id="password"> <br/>
 	 Password again: <input type="password" name="password_again" id="password_again"> <br />
-	 <input type="submit" name="regisztracio" value="RegisztrÃ¡lok"> <br />
+	 <input type="submit" name="regisztracio" value="Regisztrálok"> <br />
 	 <a href="index.php">Vissza</a>
 </form>
