@@ -1,5 +1,6 @@
 <?php
 include "config.php";
+include 'blocking.php';
 
 $sql="SELECT * FROM users WHERE nick_name=$1 AND password=$2 ";
 $stmt=pg_prepare('user',$sql);
@@ -25,6 +26,21 @@ if($_SESSION['belep'] !== true)
         {
             echo "Wrong nick name/password!";
         }
+        /*
+         set_time_limit(3600);
+         if($_POST['login'] == 5)
+         {
+         $blockAddresses = array(
+         '127.0.0.1'
+         );
+         
+         if(blockUsers($blockAddresses))
+         {
+         echo "You tried 5 times, try it later!";
+         die;
+         }
+         }
+         */
     }
 }
 else
